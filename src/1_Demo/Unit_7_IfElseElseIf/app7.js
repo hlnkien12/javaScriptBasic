@@ -1,3 +1,4 @@
+
 console.log("Unit 7: if/else/else if")
 
 
@@ -40,5 +41,3 @@ if (score >= 0 && score !== "" && !isNaN(score) && score <= 10) {
 } else {
     console.log("score not invalid");
 }
-
-
