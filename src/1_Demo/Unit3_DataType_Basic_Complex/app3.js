@@ -69,3 +69,5 @@ console.log(NumberList);
 
 const stringList = ["Hello", "Hi", "How are you"];
 console.log(stringList);
+
+//3.NaN: not a number
