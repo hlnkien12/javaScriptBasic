@@ -1,1 +1,1 @@
-# javaScriptBasic
+# JavaScriptBasic
