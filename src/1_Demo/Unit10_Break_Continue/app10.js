@@ -2,8 +2,9 @@ console.log("Unit 10 :Break, Continue")
 
 //I.Break
 /**
- * Hỗ trợ thoát Vòng lặp, if/else, switch tại 1 thời điểm, 1 điều kiện nào đó và bạn xậy dựng nên
- * 
+ * Hỗ trợ thoát Vòng lặp,switch tại 1 thời điểm, 1 điều kiện nào đó và bạn xậy dựng nên
+ * Lệnh break; chỉ dùng trong switch-case hoặc vòng lặp,
+ * không dùng trong if → sẽ bị lỗi “Illegal break statement”.
  */
 console.log("Break:")
 for (let i = 1; i < 10; i++) {
