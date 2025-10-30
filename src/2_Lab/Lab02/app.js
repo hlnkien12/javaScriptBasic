@@ -104,7 +104,8 @@ const classifyStudent3 = (avg) => {
 console.log("\nVersion 3:");
 const avg3 = calAverage(math, van, anh);
 console.log(
-    `Average Score:${avg3}\nXếp loại: ${classifyStudent3(avg3)}`
+    `Average Score:${avg3}
+    \nXếp loại: ${classifyStudent3(avg3)}`
 );
 
 /*

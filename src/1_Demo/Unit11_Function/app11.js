@@ -1,7 +1,7 @@
 console.log("Unit 11: Function");
 
 /**I.CẤU TRÚC
- * function + <functionName>(){
+ * function + <functionName>(parameter){
  *      state;
  *      return: có thể có hoặc không 
  *      (câu lệnh cuối trong hàm mà là console.log() thì ko nên dùng)
