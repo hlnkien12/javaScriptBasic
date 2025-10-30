@@ -5,6 +5,7 @@
 console.log("this is app3.js in Unit3_DataType");
 
 //I.Các kiểu dữ liệu cơ bản trong javaScript:
+//============================================================================
 //1.Number
 
 const myAge = 25;
@@ -13,6 +14,31 @@ const myScore = 9.5;
 console.log(myAge);
 console.log(myScore);
 
+//1.2,NaN: not a number: đại diện cho 1 kiểu số ko hợp lệ
+let re = 20 / 'ABC';
+console.log(re);//NaN
+
+///Cách check number: isNaN()
+console.log(isNaN(re));//true
+
+//1.3 Làm việc với Number:
+///.toString()
+let PI = 3.14;
+let PE = 5;
+console.log(PE.toString());//chuyển value từ số sang chuỗi.
+
+///.toFixed()
+// Nó làm tròn số và chuyển thành chuỗi với n chữ số sau dấu thập phân.
+// Nếu không truyền gì (toFixed()), mặc định là n = 0.
+console.log(PI.toFixed());
+
+////Bài tập:
+// Tạo hàm isNumber, hàm này dùng với mục đích kiểm tra xem một giá trị có phải là 1 số hay không(check cả NaN)
+// Hàm isNumber có 1 tham số, hãy đặt tên nó là value
+// Khi value có kiểu số, hàm sẽ trả về true, ngược lại trả về false
+
+
+//============================================================================
 
 //2.String
 const myName = "Beck";
@@ -70,4 +96,3 @@ console.log(NumberList);
 const stringList = ["Hello", "Hi", "How are you"];
 console.log(stringList);
 
-//3.NaN: not a number

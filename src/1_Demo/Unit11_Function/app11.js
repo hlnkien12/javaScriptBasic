@@ -64,9 +64,55 @@ fullName(1, 2);//Full Name: 3
  * IV. LỆNH return
  *  Xác định hàm trả về giá trị gì: đơn giản, phúc tạp,
  *  Trong hàm mà gặp câu lệnh return ở đâu thì hàm sẽ dừng luôn, muốn dùng lại thì phải gọi lại hàm
- *  
- * 
+ *
+ *
  * lưu ý:đéo dùng return nếu kết thúc hàm là consolelog()nhé!
- * dùng thì là nó return viod nhé, mà trên tab console sẽ hiện underfine.
+ * dùng thì là nó return void() nhé, mà trên tab console sẽ hiện underfine.
  */
 
+
+
+//===================================================================
+/**
+ * V,OverLoad (nạp chồng phương thức), Overide(Ghi đè phương thức)
+ * 
+ * 1. Overload (Nạp chồng phương thức) ko có thật trong JS
+ Khái niệm:
+
+Là việc cùng một tên hàm, nhưng khác danh sách tham số (số lượng, kiểu dữ liệu hoặc thứ tự).
+
+ Diễn ra trong cùng 1 class.
+
+ 2. Override (Ghi đè phương thức) có trong javascript
+ Khái niệm:
+
+Là việc lớp con định nghĩa lại phương thức của lớp cha, giữ nguyên tên, kiểu trả về, và tham số,
+nhưng thay đổi phần thân hàm (logic).
+
+ Diễn ra giữa 2 class có quan hệ kế thừa (extends).
+ */
+
+class Animal {
+    sound() {
+        console.log("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    sound() {
+        console.log("Dog barks");
+    }
+}
+
+const dog = new Dog();
+dog.sound(); // 👉 "Dog barks"
+
+//3.Định nghĩa hàm trong hàm:
+function showMessage() {
+    function showMessage2() {
+        console.log('Message 2');
+    }
+
+    showMessage2();
+}
+showMessage();

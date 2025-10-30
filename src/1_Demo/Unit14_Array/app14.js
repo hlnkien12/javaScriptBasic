@@ -19,7 +19,8 @@ const names = ["Beck", "Garna", "Messi"];
 
 //In Array bằng console.log
 console.log(names);
-
+//on element:
+console.log(names[0]);
 
 //Viết array có nhiều kiểu dữ liệu và viết array trong array:
 const others = ["bale", true, [1, 2, 3], "bla bla"];
